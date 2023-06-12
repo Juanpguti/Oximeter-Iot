@@ -10,18 +10,26 @@
 class Arduino
 {
 public:
-    Arduino( int baudRate);
+    // Constructor for the Arduino class
+    Arduino(int baudRate);
 
-   bool isReady();
-   void close(void);
+    // Check if the Arduino is ready and available
+    bool isReady();
 
-   QString readLine();
-   void writeChar(char c);
+    // Close the serial port connection
+    void close(void);
+
+    // Read a line of data from the Arduino
+    QString readLine();
+
+    // Write a character to the Arduino
+    void writeChar(char c);
+
 private:
     QSerialPort *arduino;
     bool isArduinoAvailable;
 
-
+    // Vendor identifiers for different Arduino boards
     static const quint16 arduinoUNO = 66;
     static const quint16 arduinoMEGA = 67;
 };

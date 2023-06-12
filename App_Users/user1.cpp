@@ -7,7 +7,7 @@ User1::User1(QWidget *parent,int Chanel,QString Lectura,QString Escritura) :
     QDialog(parent),
     ui(new Ui::User1)
 {
- //Crea el objeto tipo Arduino para una velocidad de 115200 bps
+  //Create the Arduino type object for a speed of 115200 bps
     arduino=new Arduino(115200);
     ui->setupUi(this);
     Ts= new ThingSpeak(Chanel,Escritura,Lectura);
@@ -41,7 +41,7 @@ User1::~User1()
         delete ui;
 }
 
-// Calendario
+// Calendar
 void User1::on_pushButton_clicked()
 {
     int h, minutos, mes;
@@ -61,39 +61,39 @@ void User1::on_pushButton_clicked()
     }
     ui->label_6->setText(Ts->RecvData(5));
  }
-//Recibe Datos
+//Recive data
 void User1::on_pushButton_3_clicked()
 {
 
 
-    //Envía un dato al Arduino para solicitar una medida del sensor
+    //Sends a data to the Arduino to request a sensor measurement.
       arduino->writeChar(0);
-      //Lee tres líneas desde el Arduino
+      //Read 3 lines from arduino
        str1=arduino->readLine();
        str2=arduino->readLine();
        str3=arduino->readLine();
        if (str1.toDouble()>=38){
-          ui->lcdNumber_6->setPalette(Qt::red); //rojo
+          ui->lcdNumber_6->setPalette(Qt::red); //red
        }else {
-           ui->lcdNumber_6->setPalette(Qt::green); //verde
+           ui->lcdNumber_6->setPalette(Qt::green); //green
          }
        if (str2.toDouble()<90){
-          ui->lcdNumber_5->setPalette(Qt::red); //rojo
+          ui->lcdNumber_5->setPalette(Qt::red); //red
        }else if (str2.toDouble()>100)
        {
-          ui->lcdNumber_5->setPalette(Qt::red); //rojo
+          ui->lcdNumber_5->setPalette(Qt::red); //red
        } else
         {
-          ui->lcdNumber_5->setPalette(Qt::green); //verde
+          ui->lcdNumber_5->setPalette(Qt::green); //green
         }
        if (str3.toDouble()<60){
-          ui->lcdNumber_4->setPalette(Qt::red); //rojo
+          ui->lcdNumber_4->setPalette(Qt::red); //red
        }else if (str3.toDouble()>100)
        {
-          ui->lcdNumber_4->setPalette(Qt::red); //rojo
+          ui->lcdNumber_4->setPalette(Qt::red); //red
        } else
         {
-          ui->lcdNumber_4->setPalette(Qt::green); //verde
+          ui->lcdNumber_4->setPalette(Qt::green); //green
         }
        ui->lcdNumber_6->display(str1.toDouble());
        ui->lcdNumber_5->display(str2.toDouble());
@@ -101,7 +101,7 @@ void User1::on_pushButton_3_clicked()
 
 }
 
-// Envía Datos
+// Send data
 void User1::on_pushButton_2_clicked()
 {
        QVector<QString> data;
@@ -112,17 +112,17 @@ void User1::on_pushButton_2_clicked()
         data.append(nullptr); // <-- recordatorio #5
         data.append("1");
         Ts->SendData(data);
-        // Para extraer datos readData(#campoquequieroleer(4))
+        // To extract data readData(#fieldyouwanttoread(4))
 
 
 }
 
 void User1::on_pushButton_4_clicked()
 {
-    // Mostrar mensaje del médico
+    // Show doctor's message
     ui->label_2->setText(Ts->RecvData(4));
 
-    // Mostrar Recordatorio al Usuario_n
+    // Show Reminder to User_n
     //ui->label_6->setText(Ts->RecvData(5));
 
 }
