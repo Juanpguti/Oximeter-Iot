@@ -22,7 +22,7 @@ The project requires the following components:
 ## Circuit Diagram
 
 Here is a simplified circuit diagram illustrating the connections:
-<div style="display: flex; align-items: center;">
+<div style="display: inline-block; vertical-align: top;">
     <pre>
     +-----------------------+
     |                       |
@@ -34,6 +34,8 @@ Here is a simplified circuit diagram illustrating the connections:
     |                       |
     +-----------------------+
     </pre>
+</div>
+<div style="display: inline-block; vertical-align: top;">
     <img src="/App_Doctor/Imagenes/image.png" alt="Your Image" width="300" height="300">
 </div>
 
