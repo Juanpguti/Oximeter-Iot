@@ -15,7 +15,7 @@ Afterward, the doctor will press the "Receive" button to extract the data from T
 
 ![Imagen](Imagenes/imagen3.png "Imagen3")
 
-a
+
 Then, the message tab is displayed, where the doctor will send the relevant information to the corresponding user.
 
 ![Imagen](Imagenes/imagen4.png "Imagen4")
