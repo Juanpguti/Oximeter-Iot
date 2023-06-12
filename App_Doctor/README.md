@@ -8,12 +8,12 @@ When running the doctor's program, you'll be greeted with the initial screen sho
 
 Upon selecting a user, a pop-up window will open for the respective user, where they will find themselves on the "Home" tab.
 
-![Imageen](Imagenes/imagen2.png "Imagen2")
+![Imagen](Imagenes/img2.png "Imagen2")
 
 
 Afterward, the doctor will press the "Receive" button to extract the data from Thinspeak and display it on the screen. If the data is within normal levels, it will appear in green; otherwise, it will appear in red.
 
-![Imageeen](Imagenes/imagen3.png "Imagen3")
+![Imageeen](Imagenes/img3.png "Imagen3")
 
 
 Then, the message tab is displayed, where the doctor will send the relevant information to the corresponding user.
