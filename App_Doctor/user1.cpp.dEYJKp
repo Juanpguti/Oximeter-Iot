@@ -1,0 +1,49 @@
+#include "user1.h"
+#include "ui_user1.h"
+#include "calendario1.h"
+
+User1::User1(QWidget *parent,int Chanel,QString Lectura,QString Escritura) :
+    QDialog(parent),
+    ui(new Ui::User1)
+{
+ //Crea el objeto tipo Arduino para una velocidad de 115200 bps
+    arduino=new Arduino(115200);
+    ui->setupUi(this);
+    Ts= new ThingSpeak(Chanel,Escritura,Lectura);
+}
+
+User1::~User1()
+{
+    delete ui;
+}
+
+void User1::on_pushButton_clicked()
+{
+    calendario1 *cal1;
+    QDate fecha= ui->calendarWidget->selectedDate();
+    QTime hora = ui->timeEdit->time();
+    ui->lcdNumber_4->display(fecha.day());
+   // ui->lcdNumber_5->display(hora.hour());
+    cal1=new calendario1(this,fecha.day());
+    cal1-> show();
+    ui->label->setStyleSheet("QLabel { background-color : red; color : blue; }");
+}
+
+void User1::on_pushButton_3_clicked()
+{
+    //Envía un dato al Arduino para solicitar una medida del sensor
+      arduino->writeChar(0);
+      //Lee tres líneas desde el Arduino
+      QString str1=arduino->readLine();
+      QString str2=arduino->readLine();
+      QString str3=arduino->readLine();
+      ui->lcdNumber_5->display(str2.toDouble());
+      ui->lcdNumber_4->display(str3.toDouble());
+      Ts->SendData(2,str2);
+}
+
+void User1::on_pushButton_2_clicked()
+{
+       QString str2=arduino->readLine();
+       Ts->SendData(2,str2);
+}
