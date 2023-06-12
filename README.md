@@ -22,24 +22,9 @@ The project requires the following components:
 ## Circuit Diagram
 
 Here is a simplified circuit diagram illustrating the connections:
-<div style="overflow: auto;">
-    <div style="float: left; margin-right: 20px;">
-        <pre>
-        +-----------------------+
-        |                       |
-        |    Microcontroller    |
-        |                       |
-        | +-------+ +---------+ |
-        | | Oximeter |  LM35  | |
-        | +-------+ +---------+ |
-        |                       |
-        +-----------------------+
-        </pre>
-    </div>
-    <div style="float: left;">
-        <img src="/App_Doctor/Imagenes/image.png">
-    </div>
-</div>
+| ![Imageenn](/App_Doctor/Imagenes/cuadro.png "cuadro") | ![fisico](/App_Doctor/Images/image.png "fisico") |
+|:---:|:---:|
+| Texto de la primera imagen | Texto de la segunda imagen |
 
 ## Functionality
 
