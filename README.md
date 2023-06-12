@@ -37,7 +37,7 @@ Here is a simplified circuit diagram illustrating the connections:
         </pre>
     </div>
     <div style="float: left;">
-        <img src="/App_Doctor/Imagenes/image.png" alt="Your Image" width="300" height="300">
+        <img src="/App_Doctor/Imagenes/image.png">
     </div>
 </div>
 
