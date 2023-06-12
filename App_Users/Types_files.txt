@@ -1,0 +1,45 @@
+arduino.cpp: It is a C++ source code file related to Arduino. It is used to program and control Arduino devices.
+
+arduino.h: It is a C++ header file related to Arduino. It contains function and variable declarations used in the arduino.cpp file.
+
+calendario1.cpp: It is a C++ source code file related to the calendar. It may be related to the calendar functionality in your project.
+
+calendario1.h: It is a C++ header file related to the calendar. It contains function and variable declarations used in the calendario1.cpp file.
+
+calendario1.ui: It is a Qt file for the user interface design related to the calendar in your project.
+
+icon.ico: It is an icon file that may be used as the project or application icon.
+
+main.cpp: It is a C++ source code file. Typically, it is the main entry point of the application and contains the main() function.
+
+mainwindow.cpp: It is a C++ source code file related to the main window of the application.
+
+mainwindow.h: It is a C++ header file related to the main window of the application. It contains function and variable declarations used in the mainwindow.cpp file.
+
+mainwindow.ui: It is a Qt file for the user interface design of the main window of the application.
+
+README.md: It is a Markdown-formatted text document file. It is typically used to provide information and documentation about the project.
+
+ThingSpeak.cpp: It is a C++ source code file related to ThingSpeak. ThingSpeak is an IoT platform that allows storage and analysis of sensor data.
+
+ThingSpeak.h: It is a C++ header file related to ThingSpeak. It contains function and variable declarations used in the ThingSpeak.cpp file.
+
+thingSpeakTest.pro: It is a Qt project file. It contains information about the project and related files.
+
+thingSpeakTest.pro.user: It is a user-specific configuration file for the thingSpeakTest.pro project.
+
+thingSpeakTest.pro.user.3dffbd9: It is a file related to the user-specific configuration for the thingSpeakTest.pro project.
+
+thingSpeakTest.pro.user.300fc08: It is a file related to the user-specific configuration for the thingSpeakTest.pro project.
+
+thingSpeakTest.pro.user.1979660: It is a file related to the user-specific configuration for the thingSpeakTest.pro project.
+
+thingSpeakTest.pro.user.bc1bbfd: It is a file related to the user-specific configuration for the thingSpeakTest.pro project.
+
+user1.cpp: It is a C++ source code file related to user1 in your project.
+
+user1.cpp.dEYJKp: It is a file related to user1 in your project. It may contain specific data or information for that user.
+
+user1.h: It is a C++ header file related to user1 in your project. It contains function and variable declarations used in the user1.cpp file.
+
+user1.ui: It is a Qt file for the user interface design related to user1 in your project. It may contain the graphical interface layout for that user.

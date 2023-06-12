@@ -1,6 +1,6 @@
 arduino.cpp: It is a source code file (.cpp) that contains code related to communication and control of Arduino. It includes functions to read and write data from and to Arduino.
 
-Hirduino.h: It is a header file (.h) that accompanies the arduino.cpp file. It contains declarations of classes, functions, and variables used in the code related to Arduino.
+arduino.h: It is a header file (.h) that accompanies the arduino.cpp file. It contains declarations of classes, functions, and variables used in the code related to Arduino.
 
 icon.ico: It is an icon file used as the application's icon. It can be displayed in the taskbar, program window, or program shortcut.
 
