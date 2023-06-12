@@ -1,4 +1,4 @@
-# User Manual for the Doctor's Application
+# Doctor's application user's manual
 
 
 When running the doctor's program, you'll be greeted with the initial screen showcasing various user interfaces.
