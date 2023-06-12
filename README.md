@@ -24,7 +24,7 @@ The project requires the following components:
 Here is a simplified circuit diagram illustrating the connections:
 | ![Imageenn](/App_Doctor/Imagenes/cuadro.png "cuadro") | ![fisico](/App_Doctor/Images/image.png "fisico") |
 |:---:|:---:|
-| Texto de la primera imagen | Texto de la segunda imagen |
+| Assembly figure | Assembly Physical |
 
 ## Functionality
 
