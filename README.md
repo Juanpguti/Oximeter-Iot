@@ -47,7 +47,7 @@ To implement this project, you will need to:
 
 2. Interface the microcontroller with the Oximeter/temperature device to extract oxygen saturation/temperature data.
 
-3. Configure the device to establish an internet connection ([Click](https://github.com/caprivm/virtualization/wiki) to get all information!).
+3. Configure the device to establish an internet connection.
 
 4. Implement the necessary code to transmit the acquired Oximeter data to the remote server or application using the chosen IoT communication protocol *(JSON)*.
 
@@ -57,8 +57,6 @@ To implement this project, you will need to:
 
 ## Applications
 
-1. [User Application](https://github.com/caprivm/virtualization/wiki)  is the part of the application installed on the user's device (Arduino). Its main function is to collect health data, such as blood oxygen level and temperature. Once the data is taken, the client sends it securely to the server for processing and storage.
+1. [User Application](https://github.com/Juanpguti/Oximeter-Iot/blob/main/App_Users/user1.cpp)  is the part of the application installed on the user's device (Arduino). Its main function is to collect health data, such as blood oxygen level and temperature. Once the data is taken, the client sends it securely to the server for processing and storage. [Here](https://github.com/Juanpguti/Oximeter-Iot/blob/main/App_Users/README.md) You will be able to see the application's user manual.
 
-2. The [Server/App](https://github.com/caprivm/virtualization/wiki) is where user data is stored and processed for further visualization and analysis. The server infrastructure is responsible for receiving the data sent by clients, storing it securely in a database and allowing the physician's application to access and view the data. 
-
-3. The [Doctor Application](https://github.com/Juanpguti/Oximeter-Iot/tree/main/App_Doctor) is the part of the application intended for healthcare professionals. It provides access to data collected from users and allows them to track their patients' health remotely. Physicians can view their patients' health records, view graphs, set alarms to notify significant changes in health indicators, and communicate directly with users through secure messaging. [Here](https://github.com/Juanpguti/Oximeter-Iot/blob/main/App_Doctor/README.md) You will be able to see the application's user manual.
+2. The [Doctor Application](https://github.com/Juanpguti/Oximeter-Iot/tree/main/App_Doctor) is the part of the application intended for healthcare professionals. It provides access to data collected from users and allows them to track their patients' health remotely. Physicians can view their patients' health records, view graphs, set alarms to notify significant changes in health indicators, and communicate directly with users through secure messaging. [Here](https://github.com/Juanpguti/Oximeter-Iot/blob/main/App_Doctor/README.md) You will be able to see the application's user manual.
