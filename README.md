@@ -22,7 +22,8 @@ The project requires the following components:
 ## Circuit Diagram
 
 Here is a simplified circuit diagram illustrating the connections:
-
+<div style="display: flex; align-items: center;">
+    <pre>
     +-----------------------+
     |                       |
     |    Microcontroller    |
@@ -32,7 +33,9 @@ Here is a simplified circuit diagram illustrating the connections:
     | +-------+ +---------+ |
     |                       |
     +-----------------------+
-
+    </pre>
+    <img src="/App_Doctor/Imagenes/image.png" alt="Your Image" width="300" height="300">
+</div>
 
 ## Functionality
 
