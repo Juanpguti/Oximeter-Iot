@@ -10,7 +10,7 @@
 class Arduino
 {
 public:
-    Arduino( int baudRate);
+    Arduino( int baudRate); // Constructor for the Arduino class, takes a baud rate as input
 
    bool isReady();
 
@@ -20,7 +20,7 @@ private:
     QSerialPort *arduino;
     bool isArduinoAvailable;
 
-
+    // Constants for Arduino board types
     static const quint16 arduinoUNO = 66;
     static const quint16 arduinoMEGA = 67;
 };

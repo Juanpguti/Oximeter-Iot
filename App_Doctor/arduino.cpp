@@ -1,16 +1,16 @@
 #include "arduino.h"
 
-
-
+// Constructor for the Arduino class, takes a baud rate as input
 Arduino::Arduino( int baudRate)
 {
 
     isArduinoAvailable=false;
 
-
+    // Create a new QSerialPort object
     arduino = new QSerialPort();
 
     QSerialPortInfo portToUse;
+      // Iterate through all available serial ports
       foreach (const QSerialPortInfo &info, QSerialPortInfo::availablePorts())
       {
           QString s = QObject::tr("Port:") + info.portName() + "\n"
@@ -22,11 +22,14 @@ Arduino::Arduino( int baudRate)
                       + QObject::tr("Product Identifier:") + (info.hasProductIdentifier() ? QString::number(info.productIdentifier(), 16) : QString()) + "\n"
                       + QObject::tr("Busy:") + (info.isBusy() ? QObject::tr("Yes") : QObject::tr("No")) + "\n";
 
+          // Check if the port is not busy and if it is an Arduino based on the description or manufacturer
+          // If it matches, assign it to the portToUse variable
+          // Commented out the if condition to use the last found port that matches the criteria
           //if(!info.isBusy() && (info.description().contains("Arduino") || info.manufacturer().contains("Arduino")))
               portToUse = info;
 
       }
-
+    // If no suitable port is found, return
       if(portToUse.isNull() || !portToUse.isValid())
       {
 
@@ -52,15 +55,15 @@ Arduino::Arduino( int baudRate)
       }
 
 }
-
+// Check if the Arduino is ready and available
 bool Arduino::isReady(){
     return isArduinoAvailable;
 }
-
+// Read a line of data from the Arduino
 QString Arduino::readLine(){
-
+    // Keep reading until a complete line is available
       while(arduino->canReadLine()==false){
-
+        // Wait for up to 20 seconds for data to be available for reading
           if(arduino->waitForReadyRead(20000)==false)
               return "";
 
@@ -71,17 +74,9 @@ QString Arduino::readLine(){
 
 }
 
-
-
-
-
-
-
-
-
-
+// Write a single character to the Arduino
 void Arduino::writeChar(char c){
-    arduino->write(&c,1);
-    arduino->waitForBytesWritten();
+    arduino->write(&c,1); // Write the character to the Arduino
+    arduino->waitForBytesWritten(); // Wait for the bytes to be written to the Arduino
 
 }
