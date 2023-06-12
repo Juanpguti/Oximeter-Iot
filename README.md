@@ -22,7 +22,7 @@ The project requires the following components:
 ## Circuit Diagram
 
 Here is a simplified circuit diagram illustrating the connections:
-| <img src="/App_Doctor/Imagenes/cuadro.png" alt="cuadro" width="250" height="250" >| <img src="/App_Doctor/Imagenes/img.png.png" alt="mon" width="250" height="250" > |
+| <img src="/App_Doctor/Imagenes/cuadro.png" alt="cuadro" width="250" height="250" >| <img src="/App_Doctor/Imagenes/img.png" alt="mon" width="250" height="250" > |
 |:---:|:---:|
 | Assembly figure | Assembly Physical |
 
