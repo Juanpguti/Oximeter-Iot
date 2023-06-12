@@ -1,7 +1,5 @@
 /*
 ThingSpeak access by using Qt
-
-Alexander López-Parrado PhD (2020)
 */
 
 //defines
