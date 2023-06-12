@@ -1,4 +1,4 @@
-# User Application Use Manual
+# User's application manual
 
 The following app allows you to receive data from the sample collection and later upload it to the cloud for the doctor to receive and examine. Then, the assigned user is selected as follows:
 
