@@ -23,5 +23,4 @@ Then, the message tab is displayed, where the doctor will send the relevant info
 
 The doctor will press the "Send Message" button, and the information will be sent to the user and displayed on the screen what they wrote.
 
-
 ![Imagen](Imagenes/imagen5.png "Imagen5")
