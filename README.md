@@ -4,7 +4,7 @@ This project aims to develop an IoT-based system using an Oximeter device to mon
 
 ## Project Overview
 
-The primary objective of this project is to leverage an oximeter device and IoT technologies to enable real-time monitoring and analysis of a patient's oxygen saturation and temperature levels. The system collects data from the oximeter device, processes it and transmits the information to a remote server or application for further analysis.
+The primary objective of this project is to leverage an oximeter device and IoT technologies to enable real-time monitoring and analysis of a patient's oxygen saturation,heart rate and temperature levels. The system collects data from the oximeter device, processes it and transmits the information to a remote server or application for further analysis.
 
 ## Components
 
