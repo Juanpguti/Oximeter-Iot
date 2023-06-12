@@ -1,33 +1,33 @@
-arduino.cpp: Es un archivo de código fuente (.cpp) que contiene el código relacionado con la comunicación y control del Arduino. Incluye funciones para leer y escribir datos desde y hacia el Arduino.
+arduino.cpp: It is a source code file (.cpp) that contains code related to communication and control of Arduino. It includes functions to read and write data from and to Arduino.
 
-Hirduino.h: Es un archivo de encabezado (.h) que acompaña al archivo arduino.cpp. Contiene las declaraciones de las clases, funciones y variables utilizadas en el código relacionado con Arduino.
+Hirduino.h: It is a header file (.h) that accompanies the arduino.cpp file. It contains declarations of classes, functions, and variables used in the code related to Arduino.
 
-icon.ico: Es un archivo de icono que se utiliza como el ícono de la aplicación. Puede ser mostrado en la barra de tareas, en la ventana del programa o en el acceso directo del programa.
+icon.ico: It is an icon file used as the application's icon. It can be displayed in the taskbar, program window, or program shortcut.
 
-imagen.qre: Es un archivo QRC, que es un archivo de recursos de Qt. Contiene información sobre los recursos, como imágenes, utilizados en la aplicación.
+imagen.qre: It is a QRC file, which is a Qt resource file. It contains information about resources, such as images, used in the application.
 
-main.cpp: Es el archivo principal del programa, un archivo de código fuente (.cpp). Contiene la función principal "main" que se ejecuta al iniciar la aplicación. Realiza la inicialización de la aplicación, crea la interfaz de usuario y realiza otras tareas de configuración.
+main.cpp: It is the main program file, a source code file (.cpp). It contains the main function that is executed when the application starts. It performs application initialization, creates the user interface, and performs other configuration tasks.
 
-mainwindow.cpp: Es un archivo de código fuente (.cpp) que contiene la implementación de la clase MainWindow. Esta clase suele ser la ventana principal de la aplicación y contiene la lógica relacionada con la interacción del usuario y la manipulación de los elementos de la interfaz gráfica.
+mainwindow.cpp: It is a source code file (.cpp) that contains the implementation of the MainWindow class. This class is usually the main window of the application and contains the logic related to user interaction and manipulation of GUI elements.
 
-mainwindow.h: Es un archivo de encabezado (.h) que acompaña al archivo mainwindow.cpp. Contiene las declaraciones de la clase MainWindow, incluyendo sus funciones miembro y variables.
+mainwindow.h: It is a header file (.h) that accompanies the mainwindow.cpp file. It contains declarations of the MainWindow class, including its member functions and variables.
 
-mainwindow.ui: Es un archivo UI de Qt (.ui) que contiene el diseño de la ventana principal de la aplicación. Puede abrirse en Qt Designer para editar la interfaz gráfica.
+mainwindow.ui: It is a Qt UI file (.ui) that contains the design of the main window of the application. It can be opened in Qt Designer to edit the graphical interface.
 
-object.cpp: Es un archivo de código fuente (.cpp) que contiene la implementación de una clase llamada "object". Puede incluir funciones y variables relacionadas con esta clase.
+object.cpp: It is a source code file (.cpp) that contains the implementation of a class named "object". It may include functions and variables related to this class.
 
-object.h: Es un archivo de encabezado (.h) que acompaña al archivo object.cpp. Contiene las declaraciones de la clase "object", incluyendo sus funciones miembro y variables.
+object.h: It is a header file (.h) that accompanies the object.cpp file. It contains declarations of the "object" class, including its member functions and variables.
 
-ThingSpeak.cpp: Es un archivo de código fuente (.cpp) que probablemente contiene la implementación de funciones o clases relacionadas con la comunicación con la plataforma ThingSpeak. Incluye funciones para enviar y recibir datos a través de la API de ThingSpeak.
+ThingSpeak.cpp: It is a source code file (.cpp) that likely contains the implementation of functions or classes related to communication with the ThingSpeak platform. It includes functions to send and receive data through the ThingSpeak API.
 
-ThingSpeak.h: Es un archivo de encabezado (.h) que acompaña al archivo ThingSpeak.cpp. Contiene las declaraciones de las clases, funciones y variables relacionadas con la comunicación con ThingSpeak.
+ThingSpeak.h: It is a header file (.h) that accompanies the ThingSpeak.cpp file. It contains declarations of classes, functions, and variables related to communication with ThingSpeak.
 
-thingSpeakTest.pro: Es un archivo de proyecto de Qt (.pro) que contiene la configuración y la lista de archivos fuente de tu proyecto. Puede especificar las dependencias, las bibliotecas utilizadas y otra información relacionada con la construcción del proyecto.
+thingSpeakTest.pro: It is a Qt project file (.pro) that contains the configuration and list of source files for your project. It can specify dependencies, used libraries, and other information related to the project's build.
 
-thingSpeakTest.pro.user: Es un archivo de configuración específico del usuario para el proyecto. Contiene configuraciones personalizadas que se aplican a tu entorno local al trabajar en el proyecto.
+thingSpeakTest.pro.user: It is a user-specific configuration file for the project. It contains customized settings that apply to your local environment when working on the project.
 
-thingSpeakTest.pro.user.3dffbd9: Este archivo es una versión anterior del archivo de configuración del usuario (thingSpeakTest.pro.user) con un nombre de archivo generado automáticamente. Puede ser seguro eliminarlo si no se necesita.
+thingSpeakTest.pro.user.3dffbd9: This file is an older version of the user configuration file (thingSpeakTest.pro.user) with an automatically generated filename. It is safe to delete if not needed.
 
-user1.cpp: Es un archivo de código fuente (.cpp) que contiene la implementación de una clase o funciones relacionadas con un usuario específico en tu aplicación.
+user1.cpp: It is a source code file (.cpp) that contains the implementation of a class or functions related to a specific user in your application.
 
-user1.ui: Es un archivo UI de Qt (.ui) que contiene el diseño de la interfaz de usuario relacionada con un usuario específico. Puede abrirse en Qt Designer para editarlo.
+user1.ui: It is a Qt UI file (.ui) that contains the design of the user-specific interface. It can be opened in Qt Designer for editing.
