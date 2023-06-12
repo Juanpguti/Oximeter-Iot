@@ -38,7 +38,7 @@ The system's main functionality includes:
 
 4. Alerts and Notifications: The system can be configured to generate alerts or notifications when oxygen saturation levels fall below or exceed predefined thresholds. These alerts can be sent to designated individuals via application.
 
-a
+
 ## Software Implementation
 
 To implement this project, you will need to:
