@@ -10,7 +10,7 @@ User1::User1(QWidget *parent,int Chanel,QString Lectura,QString Escritura) :
     QDialog(parent),
     ui(new Ui::User1)
 {
- //Crea el objeto tipo Arduino para una velocidad de 115200 bps
+ // Create Arduino object with a baud rate of 115200 bps
     arduino=new Arduino(115200);
     ui->setupUi(this);
     Ts= new ThingSpeak(Chanel,Escritura,Lectura);
@@ -31,52 +31,52 @@ User1::~User1()
     delete ui;
 }
 
-//Recibe Datos
+// Receive Data
 void User1::on_pushButton_3_clicked()
 {
 
     QVector<QString> data;
-    str1=Ts->RecvData(1);
-    str2=Ts->RecvData(2);
-    str3=Ts->RecvData(3);
+    str1=Ts->RecvData(1); // Receive data from ThingSpeak field 1
+    str2=Ts->RecvData(2); // Receive data from ThingSpeak field 2
+    str3=Ts->RecvData(3); // Receive data from ThingSpeak field 3
 
-    ui->lcdNumber_6->display(str1.toDouble());
-    ui->lcdNumber_5->display(str2.toDouble());
-    ui->lcdNumber_4->display(str3.toDouble());
+    ui->lcdNumber_6->display(str1.toDouble()); // Display the received value on LCD Number 6
+    ui->lcdNumber_5->display(str2.toDouble()); // Display the received value on LCD Number 5
+    ui->lcdNumber_4->display(str3.toDouble()); // Display the received value on LCD Number 4
 
 
-    //Temperatura
+    // Temperature
      if (str1.toDouble()>37){
-          ui->lcdNumber_6->setPalette(Qt::red);
+          ui->lcdNumber_6->setPalette(Qt::red); // Set the palette to red if temperature is above 37
        }else {
-           ui->lcdNumber_6->setPalette(Qt::green);
+           ui->lcdNumber_6->setPalette(Qt::green);  // Set the palette to green if temperature is below or equal to 37
          }
-    //Oximetria
+    // Oxygen Level
        if (str2.toDouble()>100){
-          ui->lcdNumber_5->setPalette(Qt::red); //rojo
+          ui->lcdNumber_5->setPalette(Qt::red); //red
        }else if (str2.toDouble()<90)
        {
-          ui->lcdNumber_5->setPalette(Qt::red); //rojo
+          ui->lcdNumber_5->setPalette(Qt::red); //red
        } else
         {
-          ui->lcdNumber_5->setPalette(Qt::green); //verde
+          ui->lcdNumber_5->setPalette(Qt::green); //green
         }
-       //Ritmo Cardiaco
+       // Heart Rate
        if (str3.toDouble()>100){
-          ui->lcdNumber_4->setPalette(Qt::red); //rojo
+          ui->lcdNumber_4->setPalette(Qt::red); //red
        }else if (str3.toDouble()<60)
        {
-          ui->lcdNumber_4->setPalette(Qt::red); //rojo
+          ui->lcdNumber_4->setPalette(Qt::red); //red
        } else
         {
-          ui->lcdNumber_4->setPalette(Qt::green); //verde
+          ui->lcdNumber_4->setPalette(Qt::green); //green
         }
 }
 
 void User1::on_pushButton_4_clicked()
 {
-    Ts->SendData(4,ui->oxiSend->text());
-    ui->label_2->setText(Ts->RecvData(4));
+    Ts->SendData(4,ui->oxiSend->text()); // Send data from the text input to ThingSpeak field 4
+    ui->label_2->setText(Ts->RecvData(4)); // Receive and display data from ThingSpeak field 4
 
 }
 

@@ -13,9 +13,10 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    // Create a QTimer object and connect its timeout() signal to the timerfin() slot
     timer= new QTimer(this);
     connect(timer,SIGNAL(timeout()),this,SLOT(timerfin()));
-    timer->start(15000);
+    timer->start(15000); // Start the timer with a 15-second interval
     setWindowTitle("Proyecto CDIO I");
     ui->tabWidget->setCurrentIndex(0);
     setWindowTitle("D-Iotech");
@@ -30,18 +31,20 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_tab_5_customContextMenuRequested(const QPoint &pos)
 {
-
+    // This is a slot that is triggered when the custom context menu is requested
+    // You can add code here to handle the context menu action.
 }
 
 void MainWindow::on_tab_5_windowIconTextChanged(const QString &iconText)
 {
-
+    // This is a slot that is triggered when the window icon text.
+    // You can add code here to handle the icon text change.
 }
 //Usuario 1
-void MainWindow::on_pushButton_3_clicked()
+void MainWindow::on_pushButton_3_clicked()// Button click handler for User 1
 {
-    User1 *u1;
-    u1=new User1(this,1167232,"V5AQRWNPXTZZKFXU","3F9SQL68VM51F36Z");
+    User1 *u1;// Create an instance of the User1 class with specific parameters and show it
+    u1=new User1(this,1167232,"V5AQRWNPXTZZKFXU","3F9SQL68VM51F36Z"); //  introducing password the writing, reading  with thingspeak
     u1->show();
 }
 
@@ -71,7 +74,8 @@ void MainWindow::on_pushButton_6_clicked()
 
 void MainWindow :: timerfin()
 {
-    //Ts= new ThingSpeak(Chanel,Escritura,Lectura);
+    // This slot is triggered when the timer times out.
+    //Ts= new ThingSpeak(Chanel,writing, reading)
     //Usuario 1
     ThingSpeak *Ts=new ThingSpeak(1167232,"3F9SQL68VM51F36Z","V5AQRWNPXTZZKFXU");
     QString Al = Ts->RecvData(6);

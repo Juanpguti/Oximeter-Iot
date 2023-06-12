@@ -23,24 +23,24 @@ public:
 
 private slots:
 
-    void on_tab_5_customContextMenuRequested(const QPoint &pos);
+    void on_tab_5_customContextMenuRequested(const QPoint &pos); // Slot for custom context menu request
 
-    void on_tab_5_windowIconTextChanged(const QString &iconText);
+    void on_tab_5_windowIconTextChanged(const QString &iconText); // Slot for window icon text change
 
-    void on_pushButton_3_clicked();
+    void on_pushButton_3_clicked(); // Slot for the click event of pushButton_3
 
-    void on_pushButton_4_clicked();
+    void on_pushButton_4_clicked(); // Slot for the click event of pushButton_4
 
-    void on_pushButton_5_clicked();
+    void on_pushButton_5_clicked(); // Slot for the click event of pushButton_5
 
-    void on_pushButton_6_clicked();
+    void on_pushButton_6_clicked(); // Slot for the click event of pushButton_6
 
-    void timerfin();
+    void timerfin(); // Slot for the timer timeout event
 
-    void on_tabWidget_currentChanged(int index);
+    void on_tabWidget_currentChanged(int index); // Slot for tab widget index change event
 
 private:
-    Ui::MainWindow *ui;
-    QTimer *timer;
+    Ui::MainWindow *ui; // Pointer to the UI object
+    QTimer *timer; // Pointer to the QTimer object
    };
 #endif // MAINWINDOW_H
