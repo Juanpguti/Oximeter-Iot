@@ -22,21 +22,23 @@ The project requires the following components:
 ## Circuit Diagram
 
 Here is a simplified circuit diagram illustrating the connections:
-<div style="display: inline-block; vertical-align: top;">
-    <pre>
-    +-----------------------+
-    |                       |
-    |    Microcontroller    |
-    |                       |
-    | +-------+ +---------+ |
-    | | Oximeter |  LM35  | |
-    | +-------+ +---------+ |
-    |                       |
-    +-----------------------+
-    </pre>
-</div>
-<div style="display: inline-block; vertical-align: top;">
-    <img src="/App_Doctor/Imagenes/image.png" alt="Your Image" width="300" height="300">
+<div style="overflow: auto;">
+    <div style="float: left; margin-right: 20px;">
+        <pre>
+        +-----------------------+
+        |                       |
+        |    Microcontroller    |
+        |                       |
+        | +-------+ +---------+ |
+        | | Oximeter |  LM35  | |
+        | +-------+ +---------+ |
+        |                       |
+        +-----------------------+
+        </pre>
+    </div>
+    <div style="float: left;">
+        <img src="/App_Doctor/Imagenes/image.png" alt="Your Image" width="300" height="300">
+    </div>
 </div>
 
 ## Functionality
